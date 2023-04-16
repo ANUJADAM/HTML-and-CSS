@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height and width in css</title>
+    <style>
+        .width{
+            /* width: 150px; */
+            min-width: 100px;
+            border: 1px solid red;
+            background-color: #808080;
+        }
+        .height{
+                height: 100px;
+                background-color: black;
+                color: white;
+                overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- width -->
+    <p class="width">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda doloribus, ipsam officiis dicta ipsa autem aperiam incidunt nobis omnis, vero placeat nam voluptates fugiat possimus. Dignissimos accusamus ipsa esse tenetur.</p>
+    <!-- Height -->
+    <p class="height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, assumenda neque recusandae nostrum laboriosam voluptates modi perferendis saepe, fugit error voluptas, facere temporibus ut impedit hic non sequi. Cumque, ratione!</p>
+    <!-- Box sizing -->
+    <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem laborum quod omnis laboriosam! Mollitia sunt repellat accusantium aperiam neque cum, eum, architecto dolorem blanditiis excepturi unde nostrum eius suscipit! Iusto?</p>
+</body>
+</html>
+
+
+<!-- Lecture Notes:
+List of Contents :
+
+1. Width
+2. Min-width
+3. Max-width
+4. Height
+5. Min-height
+6. Max-height
+7. Box-sizing
+
+Width
+
+● The width of text and images can be set using the width property in CSS.
+
+● Text and pictures can have their width specified in terms of pixels (px), percentages
+(%), centimetres (cm), etc. There are no padding, borders, or margins in the width
+property.
+
+● The min-width and max-width properties take precedence over the width property.
+
+● By default, the width property determines the width of the content area; however, if
+the box-sizing value is border-box, it also determines the width of the border area.
+
+● Syntax
+width: auto(default) | value | initial | inherit;
+
+Example
+
+Min width
+
+● In CSS, the min-width property is used to specify an element's minimum width.
+
+● The width value must be less than the min-width value.
+
+● Min-width preserves the set minimum width even if the content supplied within the
+element is lower.
+
+● Syntax
+min-width: length|initial(default)|inherit;
+
+Example
+
+Max-width property
+
+● The max-width property defines the maximum width of an element.
+
+● If the content is larger than the maximum width, it will automatically change the
+height of the element.
+
+● If the content is smaller than the maximum width, the max-width property has no
+effect.
+
+● Note: This prevents the value of the width property from becoming larger than
+max-width. The value of the max-width property overrides the width property.
+
+Max width example
+
+Height
+● An element's height can be set using the height property. Padding, margins, and
+element borders do not appear in the height attribute.
+
+● Syntax:
+height: auto(default)|length|initial|inherit;
+
+Example
+
+Min-height
+● In CSS, the min-height property is used to specify an element's minimum height.
+
+● The min-height attribute is utilised when the content of an element is less than the
+specified minimum height; otherwise, it has no impact.
+
+● This property makes sure that the height property value is greater than the
+minimum height of the element under consideration.
+
+● Syntax:
+min-height: length|initial(default)|inherit;
+
+Example
+
+Max-height
+● A CSS element's maximum height can be set using the max-height property.
+
+● The content of the element will overflow if its size exceeds the maximum height
+given; otherwise, it has no impact.
+
+● If the element's content is less, it has no impact. The max-height property has the
+ability to override the value of the height property.
+
+● Syntax:
+max-height: none(default)|length|initial|inherit;
+
+Example
+
+Box-sizing
+● The padding and border can be included in the element's overall width and height
+thanks to the CSS box-sizing feature.
+
+● We can incorporate the padding and border in an element's overall width and
+height overall width and height of an element by using the box-sizing property.
+
+● Padding and border are included in the width and height of an element if
+box-sizing: border-box; is set on the element. -->

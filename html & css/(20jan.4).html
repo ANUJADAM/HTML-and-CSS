@@ -1,0 +1,189 @@
+<!-- Parent child and grouping -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Parent Child -->
+
+    <!-- div>p>li and press tab -->
+    <div>
+        <p>
+            <li></li>
+        </p>
+    </div>
+    <!-- div>div>p>p>li and press tab -->
+    <div>
+        <div>
+            <p>
+                <p>
+                    <li></li>
+                </p>
+            </p>
+        </div>
+    </div>
+
+    <!-- if we want same tag repeat -->
+    <!-- div*5 -->
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <!-- div>div>p>li*7 -->
+    <div>
+        <div>
+            <p>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </p>
+        </div>
+    </div>
+
+    <!-- div.class1>p.classp>p#un1>li*5 -->
+    <div class="class1">
+        <p class="classp">
+            <p id="un1">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </p>
+        </p>
+    </div>
+
+    <!-- sibling/brotherhood -->
+     <!-- div>p+p+p -->
+     <div>
+        <p></p>
+        <p></p>
+        <p></p>
+     </div>
+
+     <!-- Multiplication -->
+     <!-- ul>li*4 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <!-- Grouping -->
+
+    <!-- div>(nav>li*5)+section -->
+    <div>
+        <nav>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </nav>
+        <section></section>
+    </div>
+    <!-- div>(nav>ul>li*2>a)+footer>p-->
+    <div>
+        <nav>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </nav>
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+<!-- shift+alt+bellow arrow for repeating below and up arrow for repeating upward -->
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+</body>
+</html>
+
+
+<!-- lecture notes:
+Lectures Checklist
+1. Parent-Child
+2. Adding Siblings
+3. Multiplication
+4. Grouping
+
+1.Parent-Child
+Emmet allows you to specify children for your elements by using the child
+operator >. Applying this will create an element inside of another one, as many
+levels deep as you require.
+Example:
+  (div>p>li and press tab)
+<div>
+    <p>
+        <li></li>
+    </p>
+</div>
+(div>div>p>p>li and press tab )
+<div>
+    <div>
+        <p>
+            <p>
+                <li></li>
+            </p>
+        </p>
+    </div>
+</div>
+
+2.Adding Sibling:
+We can give HTML sibling tags by using emmet. (Elements that have the same
+parent are considered siblings.) To accomplish this, we must insert + symbols
+between tags.
+Example:
+ {sibling/brotherhood }
+     (div>p+p+p)
+     <div>
+        <p></p>
+        <p></p>
+        <p></p>
+     </div>
+
+3.Multiplication
+We now know how to include a child inside of a tag. But what if we need to put
+more children inside the tag (all with the same tag)? In certain circumstances,
+tag multiplication is an option. After the tag that needs to be multiplied and
+before the number of repetitions, we need to add a *.
+example:
+{Multiplication}
+     (ul>li*4)
+     <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+4.Grouping
+Emmet can be used to group HTML tags. To accomplish this, a bracket must be
+placed around the tags that will be gathered ().
+ (div>(nav>ul>li*2>a)+footer>p)
+ <div>
+    <nav>
+        <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p></p>
+    </footer>
+</div>  -->
+

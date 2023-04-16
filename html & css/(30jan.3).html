@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .cont {
+            display: flex;
+        }
+        .box {
+            height: 100px;
+            width: 500px;
+        }
+        .box1 {
+            background-color: red;
+            /* order: 100; */
+            /* flex-grow: 10; */
+            
+        }
+        .box2 {
+            background-color: yellow;
+            /* order: 1; */
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+            align-self:center ;
+        }
+        .box3 {
+            background-color: green;
+            /* order: 3; */
+            /* flex-grow: 3; */
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex (must have parent in the flex box ,if parent is not exist in the flex box then it is not able to understand)-->
+    <div class="cont">
+        <div class="box box1">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box box3">box3</div>
+    </div>
+</body>
+</html>
+
+<!-- Lecture notes:
+Flex items property
+
+Order property
+
+This property defines the order of a flex item within its flex container. We can use
+this property to set the position of individual flex items within the flex container.
+
+The default value of order is 0 and the flex items will be sorted in ascending order.
+
+Flex grow property
+
+This property defines the proportion of available space (size of flex container - total
+size of flex items) each element should take up within the container.
+
+The value will be a positive integer (negative value is not allowed), higher the
+number more space the element will take up compared to the other flex items.
+
+The default value is 0, which will have no effect on the flex growth of the element.
+
+Flex shrink property
+
+This property defines that in which proportion a flex item should shrink if the flex
+container is smaller than the total size of flex items.
+
+The value will be a positive integer (negative value is not allowed), higher the
+number more it will shrink in comparison to the other flex items.
+
+The default value is 1, which means elements will shrink equally to fit the container.
+
+Flex basis property
+
+It is used to set the initial size of the flex items before the space is distributed
+according to flex grow or flex shrink.
+
+Flex property
+
+It is the shorthand property which sets the values of flex-grow, flex-shrink and
+flex-basis.
+
+Align self property
+
+This property is used to align a flex item inside its flex container.
+
+1. stretch:- This is default value for the align self, which stretches the element to fill
+its flex container height.
+
+2. flex-start: The flex-item will be aligned at the start of the cross axis.
+
+3. flex-end: The flex-item will be aligned at the end of the cross axis.
+
+4. center: The flex-item will be aligned at the center of the cross axis.
+
+5. baseline: The flex-item will be aligned with the baseline of the cross axis. -->

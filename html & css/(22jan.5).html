@@ -1,0 +1,99 @@
+<!-- Get and Post form -->
+<!-- Get method -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User registration form</title>
+</head>
+<body>
+    <!-- when we use get method all details are come in the url when user submit form -->
+    <form method="get">
+        <fieldset>
+            <legend>User regristration!!</legend>
+            <label for="username">Enter your username:</label>
+            <input type="text" name="username" id="username">
+            <br>
+            <label for="useremail">Enter your useremail:</label>
+            <input type="email" name="useremail" id="useremail">
+            <br>
+            <label for="userpassword">Enter your userpassword:</label>
+            <input type="password" name="userpassword" id="userpassword">
+            <br>
+            gender:
+            <br>
+            <label for="male">Male</label>
+            <input type="radio" name="geder" id="male" value="male">
+            <br>
+            <label for="female">Female</label>
+            <input type="radio" name="geder" id="female" value="female">
+            <br>
+            <label for="transgender">Transgender</label>
+            <input type="radio" name="geder" id="transgender" value="transgender">
+            <br>
+            <input type="submit" value="submit form">
+        </fieldset>
+    </form>
+</body>
+</html>
+
+
+<!-- Post method -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User registration form</title>
+</head>
+<body>
+    <!-- when we use post method all details are not go in the url when user submit form so it is secure and it return blank page-->
+    <form method="post" target="_blank" action="/signup">
+        <fieldset>
+            <legend>User regristration!!</legend>
+            <label for="username">Enter your username:</label>
+            <input type="text" name="username" id="username">
+            <br>
+            <label for="useremail">Enter your useremail:</label>
+            <input type="email" name="useremail" id="useremail">
+            <br>
+            <label for="userpassword">Enter your userpassword:</label>
+            <input type="password" name="userpassword" id="userpassword">
+            <br>
+            gender:
+            <br>
+            <label for="male">Male</label>
+            <input type="radio" name="geder" id="male">
+            <br>
+            <label for="female">Female</label>
+            <input type="radio" name="geder" id="female">
+            <br>
+            <label for="transgender">Transgender</label>
+            <input type="radio" name="geder" id="transgender">
+            <br>
+            <input type="submit" value="submit form">
+        </fieldset>
+    </form>
+</body>
+</html>
+
+
+
+<!-- **Lecture notes:
+1.Get Method
+● After submitting the form, the GET method displays form values in the address
+bar of the new browser tab.
+● It is only allowed to be roughly 3000 characters long. Only non-secure data,
+not sensitive data, can be used with it.
+Syntax:
+<form method="get">
+2.Post Method:
+● Unlike the GET method, the post method prevents form values from appearing
+in the address bar of the new browser tab after the form has been submitted.
+● It adds form information to the body.
+Syntax:
+<form method="post"> -->

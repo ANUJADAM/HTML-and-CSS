@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+        }
+        .box1 {
+            background-color: red;
+            border: 1ps solid black;
+        }
+        .box2 {
+            background-color:yellow;
+            /* position: fixed;
+            bottom: 0px;
+            right: 10px; */
+            /* position: relative; */
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border: 1ps solid black;
+        }
+        .box3 {
+            background-color: blue;
+            position: sticky;
+            top: 0;
+            border: 1ps solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Position -->
+    <div class="main">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt sapiente dolores vel cumque sit accusantium error possimus sequi dolorem totam, rem illum aspernatur ducimus fugit expedita quo explicabo! Neque laboriosam ex vitae harum tempora, repudiandae accusamus laborum, excepturi velit illum sequi, eius perferendis soluta dignissimos. Quia eius quis deleniti quo quam modi sunt unde, explicabo maiores, nihil provident tempore reiciendis odio ex quidem, ducimus voluptate atque! Assumenda illo maiores at eos consequuntur aliquid fugiat, nihil quaerat ut amet, facilis non tenetur laudantium nulla vitae corporis saepe repellendus. Illo fugit quam labore nesciunt magnam velit? Aliquam doloremque cum consectetur? Illum, itaque?</p>
+</body>
+</html>
+
+
+<!-- Lecture notes:
+Types of CSS
+properties
+
+Document Flow
+
+The way elements are arranged on the web page is known as document flow.
+Generally the default flow is from top to bottom or left to right on the basis of block
+or inline element.
+
+Types of CSS positions
+
+1. Static
+2. Relative
+3. Absolute
+4. Fixed
+5. Sticky
+
+Static
+
+This is the default position set for all the HTML elements.
+
+Properties of position static
+1. It is the default position of an element.
+2. It will not break the normal document flow to position the element on the page.
+3. The properties like top, left, right, bottom and z-index have no effect to position
+the element.
+
+Note: We will learn more about z-index property in further classes.
+
+Relative
+
+The element will be positioned according to the normal document flow and will
+change its position according to the given values of top, left, right and bottom.
+
+Properties of position relative
+1. It will not break the normal document flow to position the element on the page.
+2. The properties like top, left, right, bottom and z-index will have an effect on the
+element.
+3. The element will leave the space at its original position.
+
+Absolute
+
+The element will break the normal document flow to position the element on the
+page according to the given values of top, left, right and bottom.
+
+Properties of position absolute
+1. It will break the normal document flow to position the element on the page.
+2. The properties like top, left, right, bottom and z-index will have an effect on the
+element.
+3. The element will not leave any space at its original position.
+4. The element will be positioned in respect of its closest positioned ancestor.
+5. If there is no positioned ancestor element then it will take the document body as
+his ancestor.
+Note: Positioned Ancestor means an element which will be using any position
+property like relative, absolute, fixed or sticky.
+
+Fixed
+
+As the name suggests, the element will be fixed to a particular position on the page, which
+means the element will be at the same position always even if the user scrolls the page.
+
+Properties of position fixed
+1. It will break the normal document flow to position the element on the page.
+2. The element will be positioned relative to the browser window (width and height of
+screen) and will be in the same position even if the user is scrolling the page.
+3. The properties like top, left, right, bottom and z-index will have an effect on the element.
+4. The element will not leave any space in its original position.
+
+Example:- We can see the chat support icon on the PW Skills website, which is always fixed
+on the bottom right side of the screen even if we scroll the page.
+
+Sticky
+
+The element is positioned based on the user’s scroll position.
+
+Properties of position sticky
+1. It will not break the normal flow of the document to position the element on the page.
+2. It toggles between the position relative and fixed.
+3. It will behave like a relative position unless it reaches the given position, after reaching
+the given position it will behave like a fixed position.
+4. The properties like top, left, right, bottom and z-index will have an effect on the element.
+5. It will work only if any of the property (top, left, right or bottom) is specified. -->

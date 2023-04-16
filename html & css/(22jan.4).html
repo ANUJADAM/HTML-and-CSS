@@ -1,0 +1,128 @@
+<!-- Walkthrough of Forms -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form > 
+        <fieldset>
+            <legend>User details!!</legend>
+            <label for="name">Please enter your name: </label>
+        <input type="text" id="name" name="usernmae">
+        <br>
+        <label for="address">Please enter your address:</label>
+        <!-- For multilines -->
+        <textarea rows="10" cols="30" id="address" name="useraddress" ></textarea>
+        <br>
+        <label for="Dob">Date of brith</label>
+        <input type="date" id="Dob" name="userDOB"  >
+        <br>
+        <label for="password">Enter your password:</label>
+        <input type="password" id="password" name="userpassword">
+        <br>
+        Select gender:
+        <!-- we put the name tag same if we want that user able to select only one optins in the given options -->
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender">
+        <br>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender">
+        <br>
+        <!-- Checkbox for selecting more than 1 options -->
+        Select favourite movies:
+        <br>
+        <label for="avengers">Avengers</label>
+        <input type="checkbox" name="avengers" id="avengers">
+        <br>
+        <label for="thor">Thor</label>
+        <input type="checkbox" name="thor" id="thor">
+        <br>
+        <label for="ironman">Ironman</label>
+        <input type="checkbox" name="ironman" id="ironman">
+        <br>
+        Tag for submit form
+        <input type="submit">
+        </fieldset>
+        
+    </form>
+ </body>
+</html>   
+
+
+<!-- User registration form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User registration form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>User regristration!!</legend>
+            <label for="username">Enter your username:</label>
+            <input type="text" name="username" id="username">
+            <br>
+            <label for="useremail">Enter your useremail:</label>
+            <input type="email" name="useremail" id="useremail">
+            <br>
+            <label for="userpassword">Enter your userpassword:</label>
+            <input type="password" name="userpassword" id="userpassword">
+            <br>
+            gender:
+            <br>
+            <label for="male">Male</label>
+            <input type="radio" name="geder" id="male">
+            <br>
+            <label for="female">Female</label>
+            <input type="radio" name="geder" id="female">
+            <br>
+            <label for="transgender">Transgender</label>
+            <input type="radio" name="geder" id="transgender">
+            <br>
+            <input type="submit" value="submit form">
+        </fieldset>
+    </form>
+</body>
+</html>
+
+
+
+<!-- **Lecture Notes:
+List of concepts involved :
+1. What are HTML Forms ?
+2. Why do we need Forms?
+3. Different tags and provisions in Forms
+4. A sample registration form
+
+HTML Form:
+● A portion of a page known as an HTML form contains controls including text
+fields, password fields, checkboxes, radio buttons, a submit button, menus,
+etc.
+● An HTML form makes it easier for the user to input data like name, email
+address, password, phone number, etc. that may be transferred to the server
+for processing.
+
+Why use HTML Form ?
+● If you wish to collect data from a site visitor, HTML forms are necessary.
+● For instance, if a user wants to buy something online, he or she must fill out the
+form with the shipping address and credit/debit card information so that the
+item may be delivered to the specified address.
+
+HTML tags and elements
+● HTML <form> element
+● HTML TextField Control
+● HTML <textarea> in form
+● Label in Form
+● HTML Password Field Control
+● Radio Button Control
+● Checkbox Control
+● Submit button control
+● HTML <fieldset> element
+● A Sample HTML Form -->

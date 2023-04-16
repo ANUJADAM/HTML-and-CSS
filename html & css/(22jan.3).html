@@ -1,0 +1,69 @@
+<!-- Tables and it's properties -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table & It's properties</title>
+</head>
+<body>
+    <!-- cellpadding means give space from inside of the cell  and cellspacing means give space in the cell-->
+
+    <table border cellpadding = "16px" cellspacing = "5 px" bordercolor="red">
+        <tr>
+            <th>Sr.No</th>
+            <th>Sub 1</th>
+            <th>Sub 2</th>
+            <th>Sub 3</th>
+            <th>Sub 4</th>
+            <th>Sub 5</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>English</td>
+            <td>Science</td>
+            <td>Computer</td>
+            <td colspan="2">math</td>
+            <!-- <td>Hindi</td> -->
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>English</td>
+            <td rowspan="2">Science</td>
+            <td>Computer</td>
+            <td>math</td>
+            <td>Hindi</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>English</td>
+            <!-- <td>Science</td> -->
+            <td>Computer</td>
+            <td>math</td>
+            <td>Hindi</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!-- **Lecture Notes:
+List of concepts involved :
+1. HTML Table
+2. Properties of table
+
+HTML Table :
+● Web developers can organize information like text, images, links, and other
+data into rows and columns of cells using HTML tables.
+● The <table> tag is used to generate HTML tables. T
+● Table rows are created using the <tr> tag, while data cells are created using
+the td> tag. Regular elements beneath <td> are by default left aligned.
+
+Properties of tables :
+● Table Heading
+● Cell padding and spacing
+● Colspan and rowspan
+● Table Background
+● Table height and width
+● Table caption
+● Table Header, Body and footer -->

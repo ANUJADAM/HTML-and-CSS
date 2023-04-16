@@ -1,0 +1,65 @@
+<!-- Getting a video on the web page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body>
+    <!-- We can bring video free from these websites- 1.pexels 2.pixabay 3.unsplash-->
+    <!-- frist method of loading video -->
+    <h1>Loading Video</h1>
+    <video src="https://player.vimeo.com/progressive_redirect/playback/790665520/rendition/540p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c5858ce72ec414634e2c3b9d24730a07381a9077c87a998f80a57bfb018eebd2" controls autoplay muted height="500px" width="600px">Nature video</video>
+
+    <!-- Second method of loading video -->
+    <!-- Here we can add two videos ,in case one will not play then second will play -->
+    <video controls autoplay  muted height="500px" width="600px">
+        <source src="https://player.vimeo.com/external/516760939.sd.mp4?s=05e312d8879465c55561bd82618ed4fd9b781022&profile_id=165&oauth2_token_id=57447761">
+        <source src="https://player.vimeo.com/progressive_redirect/playback/794956399/rendition/540p/file.mp4?loc=external&oauth2_token_id=57447761&signature=4abd268edfe0a16e6bface97fabca09c6a08ddd1e6c9c833b1403a3d8af47103">
+    </video>
+</body>
+</html>
+
+
+<!-- **Lecture Notes:
+Lecture CheckList
+1. Introduction to HTML media
+2. Importance of videos on webpages.
+3. HTML Video tag
+
+Introduction to HTML media:
+Websites in the present-day scenario are not just built to showcase the
+content. Web developers and website owners want to make their websites
+more attractive and interactive. Considering this, the media in the websitesare gaining popularity day by day. In Fact these days one of the mostimportant things on the internet is the media.
+
+There are many potential uses for
+adding video to a website:
+1. Educational content
+2. Marketing and advertising
+3. Entertaining and engaging visitors
+4. Providing customer support
+5. Improving SEO
+
+To add a video to a web page, you can
+use the <video> element:
+    <video src="path/to/video.mp4" controls></video>
+
+You can also specify the width and height of the video using the width andheight attributes:
+    <video src="path/to/video.mp4" controls width="600px" height="300px"></video>
+
+ You can also add multiple sources for the video using the <source>element,in case the browser does not support the first source.
+    <video controls width="600px" height="300px">
+    <source  src="path/to/video.mp4" type="video/mp4">
+    <source  src="path/to/video.webm" type="video/webm">
+    </video>
+
+
+ Attributes:
+    - src 
+    - controls
+    - muted
+    - autoplay
+    - width
+    - height -->

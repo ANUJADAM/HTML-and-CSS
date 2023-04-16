@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        .grad{
+            height: 500px;
+            /* background-image:linear-gradient(red,yellow,blue); */
+            /* background-image:linear-gradient(to right,red,yellow); */
+            /* background-image:linear-gradient(to left,red,yellow); */
+            /* background-image:radial-gradient(red,yellow,blue); */
+            /* background-image:radial-gradient(circle,red,yellow);  (try yorself four more shape) */
+            /* background-image:repeating-radial-gradient(red 10% ,yellow 20% ,blue 15%); */
+            /* background-image: conic-gradient(red,yellow,black); */
+            background-image: conic-gradient(red 210deg,yellow 60deg,black);
+        }
+    </style>
+</head>
+<body>
+    <!-- Linear Gradient -->
+    <div class="grad"></div>
+</body>
+</html>
+
+
+<!-- **Lecture Notes:List of Content
+
+1. Gradient
+2. Linear gradient
+3. Radial gradient
+4. Conic gradient
+
+Gradient
+
+It lets you display smooth transitions between two or more specified colors.
+
+CSS defines three types of gradients:
+● Linear Gradients (goes down/up/left/right/diagonally)
+● Radial Gradients (defined by their center)
+● Conic Gradients (rotated around a center point)
+
+Linear Gradient
+
+● To create a linear gradient you must define at least two color stops. Color stops are
+the colors you want to render smooth transitions among. You can also set a starting
+point and a direction (or an angle) along with the gradient effect.
+
+● Syntax
+background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+
+Radial Gradient
+
+● It is defined by its center.
+
+● To create a radial gradient you must also define at least two color stops.
+
+Syntax
+background-image: radial-gradient(shape size at position, start-color, ...,
+last-color);
+
+● By default, shape is ellipse, size is farthest-corner, and position is center.
+
+Repeating a radial-gradient
+
+● The repeating-radial-gradient() function is used to repeat radial gradients -->

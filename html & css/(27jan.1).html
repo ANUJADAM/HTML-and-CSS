@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        /* p:hover{
+            background-color: black;
+            color: azure;
+        } */
+        /* .hover:hover{
+            background-color: black;
+            color: azure;
+        }
+        input:focus{
+            color: brown;
+            background-color: black;
+            font-size: 25pxpx;
+        } */
+        /* a:hover{
+            color: pink;
+        }
+        a:active{
+            color: aqua;
+        }
+        a:visited{
+            color: black;
+        } */
+        /* a:first-child{
+            background-color:yellow;
+
+        } */
+        /* a:nth-child(even){
+            background-color:yellow;
+        } */
+
+        /* pseudo element */
+
+        /* p::first-line{
+             color: violet;
+        } */
+        /* p::first-letter{
+             color: violet;
+        } */
+        p::after{
+             content: "Anu Jadam";
+             color: aqua;
+        }
+        p::before{
+             content: "Anu Jadam";
+             color: aqua;
+        }
+        p::selection{
+            background-color:black ;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- Pseudo Class -->
+    <p class="hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quaerat dolor reprehenderit, voluptate culpa sed dicta, doloremque ad amet eligendi delectus eius perferendis! Et eaque repudiandae facere nobis deserunt ipsum.</p>
+
+    <input type="text">
+     <hr>
+    <nav>
+        <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/">Google</a>
+
+    <!-- Pseudo element -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, a! Ea, officiis veritatis velit minus beatae voluptatem reiciendis vero, tenetur molestiae pariatur dolorem inventore, incidunt eligendi repellat dolor ratione aliquid!</p>
+    
+    </nav>
+</body>
+</html>
+
+
+<!-- lecture Notes:
+Lecture CheckList
+
+1. Introduction to Pseudo-classes.
+2. Pseudo-class selectors.
+3. Pseudo-elements.
+4. Difference between pseudo-class and pseudo-elements.
+5. CSS Specificity
+
+Introduction to Pseudo-classes.
+
+Pseudo-classes are used to select elements based on their state, such as
+when the element is hovered over, when it has focus, or when it is the first or
+last child of its parent element.
+
+Most frequently used CSS Pseudo class
+selectors.
+
+● hover
+
+● focus
+
+● link
+
+● visited
+
+● active
+
+● first-child
+
+● lang
+● nth-child()
+
+hover
+
+The :hover selector is for selecting the elements when we move the mouse on
+them. We can use it on almost every HTML element.
+
+focus
+
+The :focus selector is used to select the element that has focus.
+
+link
+
+The :link selector is used to select unvisited links.
+
+first-child
+
+The :first-child selector is used to select the specified selector, only if it is the
+first child of its parent.
+
+lang
+
+The :lang() selector is used to select elements with a lang attribute with the
+specified value.
+
+Note: The lang attribute value is most often a two-letter language code, like
+lang="fr" (for French).
+
+nth-child
+
+The :nth-child(n) selector matches every element that is the nth child of its
+parent.
+
+Pseudo Elements
+
+CSS allows developers to create special types of selectors called
+pseudo-elements, which can be used to style specific parts of an HTML element.
+
+Some of the pseudo-elements are
+● ::first-line
+● ::first-letter
+● ::after
+● ::before
+● ::marker
+● ::selection
+
+::first-line
+
+The ::first-line pseudo-element is used to add a special style to the first line of
+a text.
+
+Note: The ::first-line pseudo-element can only be applied to block-level
+elements.
+
+::first-letter
+
+The ::first-letter pseudo-element is used to add a special style to the first letter
+of a text.
+
+Note: The ::first-letter pseudo-element can only be applied to block-level
+elements.
+
+::after
+
+The ::after pseudo-element can be used to insert some content and apply
+styles after the content of an element.
+
+::before
+
+The ::before pseudo-element can be used to insert some content and apply
+styles before the content of an element.
+
+::marker
+
+The ::marker pseudo-element selects the markers of list items.
+
+::selection
+
+The ::selection pseudo-element matches the portion of an element that is
+selected by a user.
+
+The following CSS properties can be applied to ::selection: color, background,
+cursor, and outline.
+
+Difference between pseudo-class and
+pseudo-elements
+
+Pseudo-classes and pseudo-elements are both used in CSS to select
+elements on a web page that cannot be selected using regular CSS selectors.
+
+pseudo-classes select elements based on their state or characteristics, while
+pseudo-elements select specific parts of an element.
+
+Difference between pseudo-class and
+pseudo-elements
+
+Pseudo-classes are defined by adding a colon (:) followed by the name of the
+pseudo-class after the element you want to target.
+
+For example, the :hover pseudo-class is used to select an element when the
+user's cursor hovers over it.
+
+Pseudo-elements are defined by adding two colons (::) followed by the name
+of the pseudo-element after the element you want to target.
+
+For example, the ::before pseudo-element is used to insert content before the
+selected element.
+
+CSS Specificity
+
+CSS Specificity is a fundamental concept in CSS that determines which CSS
+styles will be applied to an HTML element. Understanding how specificity
+works is crucial for creating well-structured and maintainable CSS code. -->

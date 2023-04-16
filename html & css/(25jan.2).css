@@ -1,0 +1,33 @@
+/* 1.Simple Selector */
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Element Selector */
+h1{
+    color: aqua;
+}
+p{
+    color: blue;
+}
+
+/* class Selectors */
+.pra{
+    color: rgb(180, 19, 131);
+}
+.Hello{
+    font-size: 60px;
+}
+
+/* ID Selector(we can not use one id on multiple places) */
+#id1{
+    color: brown;
+    background-color: rgb(30, 182, 184);
+}
+
+/* Selector List */
+.class1 , .class7 , .class3{
+  background-color: royalblue;
+  color: azure;
+}

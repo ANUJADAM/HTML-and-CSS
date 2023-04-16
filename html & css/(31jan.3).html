@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Album</title>
+    <style>
+        .container{
+            display: grid;
+            height: 700px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px;
+        }
+        /* .box{
+             height: 100px;
+            width: 100px; 
+        } */
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: yellow;
+        }
+        .box3{
+            background-color: gray;
+        }
+        .box4{
+            background-color: darkblue;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .box5{
+            background-color: magenta;
+        }
+        .box6{
+            background-color: forestgreen;
+        }
+        .box7{
+            background-color: pink;
+        }
+        .box8{
+            background-color: brown;
+        }
+        .box9{
+            background-color: black;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Creating Album -->
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+    </div>
+</body>
+</html>
+
+<!-- Creating
+Album with Grid
+
+Lecture CheckList
+
+1. Introduction.
+2. Expected Output.
+3. Steps to be followed.
+
+Introduction.
+
+Since we have seen the properties of the grid and understand what a grid is. It’s
+time we do some simple project out of it so we would have a clear understanding
+of what a grid is and how powerful it is in creating a layout.
+
+In this lecture, we will be creating a photo album using a grid. A grid album is a
+layout design that utilizes the CSS Grid to display a collection of photos in a grid
+format. Each image is represented by a grid item, which can be positioned and
+sized using grid-related properties.
+
+Expected Output
+
+The output of the lecture would be an album
+Steps To Be Followed
+
+1. The first step is to know the total number of images that would be put inside the
+album. From the final output image, we got to know that the total number of
+images is 9.
+We will be enclosing 9 divisions inside the container.
+
+Steps To Be Followed
+
+2. Now we need to define the number of rows and columns in the grid container.
+From the layout image, we could trace that there are 17 rows and 10 columns
+later divided among the images.
+
+Steps To Be Followed
+
+3. Now as per the output and layout, we must specify the location of the image.
+The location of the image can be set using row-start, row-end, column-start,
+and column-end.
+
+Steps To Be Followed
+
+4. Now we got the layout it’s time to add the images and specify their properties.
+
+Steps To Be Followed
+
+5. Finally, it’s time to remove the background color yellow from the album items
+and the color red from the album container. -->

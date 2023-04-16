@@ -1,0 +1,55 @@
+<!-- Getting an audio on the webpage(we bring audio from the website 1.Sptofy )  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <!-- Audio -->
+    <!-- Frist method -->
+    <audio src="(22jan.2).mp4.mp3" controls aotoplay muted></audio>
+    <!-- Second method -->
+    <audio  controls aotoplay muted>
+        <source src="(22jan.2).mp4.mp3">
+        <source src="">
+        <source src="">
+<!-- Note: audio and video tags are inline -->
+    </audio>
+</body>
+</html>
+
+
+<!-- **Lecture Notes:
+Introduction to audio in web pages:
+We often see many websites, especially blogging sites with an audio player in
+them. These audio players play the audio description of the blog. This is very
+important when it comes to websites that have content to tell in a story format
+or a website where the owner wants to share his thoughts with the audience
+over voice.
+
+HTML Audio:
+HTML provides a way to play audio on web pages through the <audio> element.
+The <audio> element is a self-closing tag, meaning it does not have a closing
+tag, and it is used to embed audio files in web pages.
+The <audio> tag creates an audio player on a web page. Along with playing the
+audio, it supports media controls, like play, pause, volume, and mute. The
+browser will choose the first file with a file format that it supports. Supported
+audio file formats include MP3, WAV, and OGG.
+
+Attributes:
+● src.
+● controls.
+● muted.
+● autoplay.
+
+HTML Audio:
+The text between the <audio> and </audio> tags will only be displayed in
+browsers that do not support the <audio> element.
+
+HTML Source Tag:
+Some browsers or hardware don’t support audio tag or audio formats. To
+handle this sometimes we provide multiple audio types to the audio tag and let
+the browser display what must be played. This can be done by the source tag. -->

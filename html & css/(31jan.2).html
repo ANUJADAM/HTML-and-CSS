@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      .container {
+        display: grid;
+        height: 7000px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 250px);
+      }
+      .box {
+        /* height: 100px;
+        width: 100px; */
+      }
+      .box1 {
+        background-color: red;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      .box2 {
+        background-color: Green;
+      }
+      .box3 {
+        background-color: Yellow;
+      }
+      .box4 {
+        background-color: pink;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+      .box5 {
+        background-color: brown;
+      }
+      .box6 {
+        background-color: purple;
+      }
+      .box7 {
+        background-color: violet;
+      }
+      .box8 {
+        background-color: yellowgreen;
+      }
+      .box9 {
+        background-color: magenta;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Grid Album -->
+    <div class="container">
+      <div class="box box1">
+        <div class="box box5">Box1</div>
+      </div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+      <div class="box box5"></div>
+      <div class="box box6"></div>
+      <div class="box box7"></div>
+      <div class="box box8"></div>
+      <div class="box box9"></div>
+    </div>
+  </body>
+</html>
+
+<!-- Row and Column in Grid
+
+Lecture CheckList
+
+1. Introduction to Grid Layout.
+2. Grid Layout properties.
+
+Introduction to Grid Layout.
+
+The Grid Layout is a two-dimensional layout system for creating rows and
+columns. It allows for creating flexible and responsive layouts that can adapt to
+different screen sizes and devices.
+
+Grid Layout properties.
+
+We shall look at the grid properties in two ways
+● Properties are to be applied on grid containers [ Parent ].
+● Properties are to be applied to grid items [ Children ].
+
+grid-template-columns
+
+The grid-template-columns property defines the number of columns in your grid
+layout, and it can define the width of each column.
+
+The value is a space-separated-list, where each value defines the width of the
+respective column.
+
+If you want your grid layout to contain 5 columns, specify the width of the 5
+columns, or "auto" if all columns should have the same width.
+
+Special Units & Functions
+
+repeat()
+The repeat() function is used to reduce repetitive declarations.
+
+fr units
+The "fr" unit in CSS is a way to divide up the available space in a grid or layout. It is
+used to specify how much of the space should be given to a certain element or
+group of elements. It represents a fraction of the available space.
+
+Sizing Functions
+
+minmax()
+
+The minmax() function in CSS is used to set a range of values for a property. It sets
+a minimum and maximum value for a property.
+
+grid-template-rows
+
+The grid-template-rows property defines the height of each row. It is used to define
+the number of rows and their size in a grid container.
+
+grid-template-areas
+
+The grid-template-areas property specifies areas within the grid layout.
+● <grid-area-name> – the name of a grid area specified with grid-area.
+● dot(.) - Represents the empty space in the template.
+
+grid-template
+
+The grid-template property in CSS is a shorthand property for setting the
+grid-template-rows, grid-template-columns, and grid-template-areas
+properties all at once. It allows you to define the structure of a grid layout in a
+simple way.
+
+The order of values in the grid-template property is as follows:
+● grid-template-rows
+● grid-template-columns
+● grid-template-areas
+
+The order should be : grid-template-rows / grid-template-columns /
+grid-template-areas.
+
+column-gap row-gap grid-column-gap
+grid-row-gap
+
+Specifies the gap. grid-column-gap is the old notation for column-gap,
+grid-row-gap is the old notation for row-gap.
+
+gap, grid-gap
+
+A shorthand for row-gap and column-gap.
+
+justify-items
+
+The justify-items property in CSS is used to align the grid items along the horizontal
+(x) axis within their grid cell. It applies to all grid items within the grid container.
+● start – aligns items to be pushed to the start edge of their cell
+● end – aligns items to be pushed to the end edge of their cell
+● center – aligns items in the center of their cell
+● stretch – fills the whole width of the cell (this is the default)
+
+align-items
+
+The align-items property in CSS is used to align the grid items along the vertical
+(y) axis within their grid cell. It applies to all grid items within the grid container.
+
+● start: Aligns the grid items to the top of the grid cell.
+● end: Aligns the grid items to the bottom of the grid cell.
+● center: Aligns the grid items to the center of the grid cell.
+● stretch: Stretches the grid items to fill the entire height of the grid cell.
+
+grid-column-start grid-column-end
+grid-row-start grid-row-end
+
+grid-column-start and grid-column-end properties are used to specify the
+starting and ending of an grid-item along the horizontal (x) axis.
+
+grid-row-start and grid-row-end properties in CSS are used to specify the starting
+and ending of an grid-item along the vertical (y) axis.
+
+justify-self
+
+The justify-self property is used to align a specific grid item along the horizontal (x)
+axis within its grid cell.
+
+● start – aligns the grid item to be flush with the start edge of the cell
+● end – aligns the grid item to be flush with the end edge of the cell
+● center – aligns the grid item in the center of the cell
+● stretch – fills the whole width of the cell (this is the default)
+
+align-self
+
+The align-self property is used to align a specific grid item along the vertical (y)
+axis within its grid cell.
+
+● start – aligns the grid item to be flush with the start edge of the cell
+● end – aligns the grid item to be flush with the end edge of the cell
+● center – aligns the grid item in the center of the cell
+● stretch – fills the whole width of the cell (this is the default) -->

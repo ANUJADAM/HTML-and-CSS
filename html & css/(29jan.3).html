@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow and Z-index</title>
+    <style>
+        p {
+            height: 250px;
+            width: 250px;
+            border: 2px solid red;
+             /* overflow: hidden;  */
+             /* overflow: scroll;  */
+            overflow: auto;
+        }
+
+        .one {
+            height: 50px;
+            width: 50px;
+            background-color:red;
+            position: absolute;
+            top: 0;
+            z-index: 2;
+
+        }
+        .two {
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <!-- Overflow -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam repellendus voluptatibus in consequatur perferendis omnis vitae qui sapiente quia excepturi tempore porro labore eaque inventore recusandae fuga eum, nisi quaerat necessitatibus odio quos blanditiis tenetur ut. Aspernatur vel, incidunt delectus quo voluptate, illo vitae explicabo laborum rem ipsum atque iure ut molestiae cum debitis maiores ab qui adipisci sed eos dolores a dicta? Saepe voluptatibus quis corrupti animi doloremque corporis aspernatur magnam quibusdam quae? Optio sint ratione necessitatibus tenetur dolorum? Debitis dignissimos aspernatur rem nam quod alias fugit consequuntur sed autem iure doloribus neque consectetur magni ex ea, omnis asperiores?</p>
+
+    <!-- Z-index -->
+    <div class="one"></div>
+    <div class="two"></div>
+    
+</body>
+</html>
+
+
+<!-- Lecture notes:
+overflow
+
+and Z-index
+
+Lecture CheckList
+
+1. Overflow in CSS.
+
+2. CSS Z-Index.
+
+Overflow in CSS.
+
+The overflow property in CSS determines what happens to content that is too large
+to fit in an element's box.
+
+Overflow in CSS.
+
+The overflow property has the following values:
+● visible - Default. The overflow is not clipped. The content renders outside the
+element's box
+● hidden - The overflow is clipped, and the rest of the content will be invisible
+● scroll - The overflow is clipped, and a scrollbar is added to see the rest of the
+content
+● auto - Similar to scroll, but it adds scrollbars only when necessary
+
+Overflow in CSS.
+
+overflow: visible
+
+By default, the overflow is visible, meaning that it is not clipped and it renders
+outside the element's box
+
+Overflow in CSS.
+
+overflow: hidden
+
+With the hidden value, the overflow is clipped, and the rest of the content is hidden.
+
+Overflow in CSS.
+
+overflow: scroll
+
+Setting the value to scroll, the overflow is clipped and a scrollbar is added to scroll
+inside the box. Note that this will add a scrollbar both horizontally and vertically
+(even if you do not need it).
+
+Overflow in CSS.
+
+overflow: auto
+The auto value is similar to scroll, but it adds scrollbars only when necessary.
+
+overflow-x and overflow-y
+The overflow-x and overflow-y properties specify whether to change the overflow
+of content just horizontally or vertically (or both):
+
+overflow-x specifies what to do with the left/right edges of the content.
+overflow-y specifies what to do with the top/bottom edges of the content
+
+CSS Z-Index.
+
+The z-index property in CSS is used to specify the stack order of an element. An
+element with a higher z-index value will be placed in front of an element with a
+lower z-index value.
+
+The value of the z-index property is an integer, the element with a higher number is
+placed on top of the elements with lower numbers. -->

@@ -1,0 +1,29 @@
+/* Desecendent Selector */
+main p{
+    color: blueviolet;
+}   
+
+/* Child selector */
+h1 >p {
+    color: brown;
+}
+
+/* Adjacent sibling selector. */
+section + p{
+    color: yellow;
+
+}
+
+/* General sibling selector. */
+div ~ p{
+    color: rgb(21, 165, 31);
+
+}
+/* Attribute selector*/
+[target="_blank"]{
+    color: rgb(188, 63, 140);
+}
+/*  */
+[alt~="PW"]{
+    background-color:black;
+}

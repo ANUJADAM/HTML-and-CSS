@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .cont {
+            display: flex;
+            height: 300px;
+            /* display: inline-flex; */
+            border: 1px solid black;
+
+            /* flex-direction:row-reverse ; */
+            /* flex-direction:column ; */
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            /* justify-content: space-around; */
+            align-items:center ;
+            gap: 100px;
+            /* row-gap: 10px; */
+            /* flex-flow: flex direction flex wrap ; */
+            flex-flow: start nowrap;
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+        }
+        .box1 {
+            background-color: red;
+        }
+        .box2 {
+            background-color: yellow;
+        }
+        .box3 {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex (must have parent in the flex box ,if parent is not exist in the flex box then it is not able to understand)-->
+    <div class="cont">
+        <div class="box box1">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box box3">box3</div>
+    </div>
+</body>
+</html>
+
+
+<!-- Lecture Notes:
+Different flexbox property
+
+Different flexbox property
+
+Flexbox offers a variety of properties to create layout efficiently. Generally we can
+
+categorise the flexbox properties into two parts-
+1. Flex Container Properties
+
+2. Flex Items Properties
+
+Flex Container Property
+
+These are the properties that are used over the flex container (parent container).
+
+Flex container properties are as follows-
+a. display
+
+b. flex-direction
+c. flex-wrap
+d. flex-flow
+e. justify-content
+f. align-items
+g. align-content
+h. gap
+i. row-gap
+ii. column-gap
+
+Flex Items Property
+
+These are the properties that are used over the flex items (child elements). Flex
+
+items properties are as follows-
+a. order
+
+b. flex-grow
+c. flex-shrink
+d. flex-basis
+e. flex
+f. align-self
+
+Display property
+
+It is used to define a flex container. After defining a flex container using display flex
+or inline-flex, it will enable a flex context for all its direct children and will allow
+users to use flex properties over the flex container and its flex items respectively.
+
+Difference between flex and inline-flex
+
+The major difference between two is that the display:inline-flex will make the flex
+container display inline but will not make flex items display inline.
+
+Flex Direction Property
+
+It is used to define the direction in which all the flex items should be laid out. By
+default the flex direction of a flex container is row to which we can change by using
+this property.
+
+There can be four values of a flex direction-
+1. row
+
+2. row-reverse
+3. column
+4. column-reverse
+
+Flex Wrap Property
+
+This property is used to define whether the flex items should wrap themself to fit
+the container width or not if the total required width of flex items are more than the
+flex container width.
+
+Flex wrap can have three possible values-
+1. nowrap
+
+2. wrap
+3. wrap-reverse
+
+Flex Flow Property
+
+It is a shorthand property for setting both flex-direction and flex-wrap properties in
+one line.
+
+Syntax- flex-flow: flex-direction flex-wrap
+
+Justify Content Property
+
+It is used to align the flex items along with the main axis of the container within the
+flexbox layout.
+
+It can have these possible values-
+1. flex-start
+
+2. flex-end
+3. center
+4. space-between
+5. space-around
+6. space-evenly
+
+Align Items Property
+
+It is used to align the flex items along with the cross axis of the container within the
+flexbox layout.
+
+It can have these possible values-
+1. stretch
+
+2. flex-start
+3. flex-end
+4. center
+5. baseline
+
+Align Content Property
+
+This property is used to align a flex container’s lines within it when there is extra
+space in the cross axis, similar to that of justify-content property which works on
+the main-axis. There should be more than one line to function the align content.
+
+It can have these possible values-
+1. stretch
+
+2. flex-start
+3. flex-end
+4. center
+5. space-between
+6. space-around
+
+Gap Property
+
+This property defines the amount of space between the rows and columns of a flex
+container. The gap is a shorthand property for defining the row-gap and
+column-gap.
+
+Syntax
+1. gap:10px;
+This is similar to row-gap:10px and column-gap:10px
+
+2. gap:10px 20px
+This is similar to row-gap:10px and column-gap:20px -->
